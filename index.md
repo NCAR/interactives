@@ -1,10 +1,10 @@
 ---
 layout: frontpage
 title: Home
-banner-title: Example Github site
-banner-description: This is a custom Jekyll theme based on UCAR/NCAR's custom 'koru' design. It is built on top of the Foundation framework. This provides users and developers with responsiveness and accessibility.
-banner-button-text: Download
-banner-button-url: https://github.com/NCAR/jekyll-koru-jekyll-template
+banner-title: Example of Scrollytelling
+banner-description: A test of implementing Javascript to allow scroll-based user interaction with VAPOR videos.
+banner-button-text: Launch
+banner-button-url: https://ncar.github.io/interactives/watervapor/index.html
 ---
 
 # Documentation
