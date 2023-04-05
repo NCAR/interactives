@@ -1,3 +1,4 @@
+/////////////////// VIDEO SCROLLING SECTION ///////////////////
 const videoFrame = document.querySelector('#video-frame');
 const video = videoFrame.querySelector('#vid');
 
@@ -6,7 +7,6 @@ const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene( {
     duration: 74000,
     triggrElemnt: videoFrame,
-    // offset: info.offsetHeight,
     triggerHook: 0
 })
     .addIndicators()
@@ -14,6 +14,7 @@ const scene = new ScrollMagic.Scene( {
     .addTo(controller)
 
 
+// implementing a minor delay after scrolling stops to make a smoother transition
 let accelAmount = 0.5;
 let scrollPos = 0;
 let delay = 0;

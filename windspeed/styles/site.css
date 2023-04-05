@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-Light.ttf);
+  }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+}
+
+#intro {
+    height: 100vh;
+    width: 100%;
+}
+
+#intro-vid {
+    height: 100vh;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+#title {
+    position: absolute;
+    bottom: 0;
+    height: 30em;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0), 20%, rgb(0, 0, 0));
+    /* border: solid thin red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3em;
+}
+
+h1 {
+    color: white;  
+    font-family: Poppins;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: white;
+    font-family: Poppins;
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+#icon-wrapper {
+    display: flex;
+    gap: 2em;
+}
+
+#cisl-logo {
+    max-width: 15%;
+    align-self: center;
+}
+
+#nsf-logo {
+    max-width: 3%;
+}
+
+
+#viewport {
+    position: relative;
+}
+
+#vid {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#offset1 {
+    height: 1000px;
+}
+
+#offset2 {
+    height: 1500px;
+}
+
+#offset3 {
+    height: 1500px;
+}
+
+#offset4 {
+    height: 1800px;
+}
+
+#offset8 {
+    height: 25000px;
+}
+
+#offset9 {
+    height: 12000px;
+}
+
+#offset5, #offset7, #offset10, #offset11, #offset12 {
+    height: 1300px;
+}
+
+
+p {
+    color: white;
+    font-family: Poppins;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.triggerShape {
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    padding: 1em;
+}
+
+.text {
+    width: 25em;
+    background-color: rgba(0, 0, 0, 0.207);
+    padding: 0.75em;
+    border: solid thin rgba(255, 255, 255, 0.386)
+}
