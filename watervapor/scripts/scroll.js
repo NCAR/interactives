@@ -9,7 +9,6 @@ const scene = new ScrollMagic.Scene( {
     triggrElemnt: videoFrame,
     triggerHook: 0
 })
-    .addIndicators()
     .setPin(videoFrame)
     .addTo(controller)
 
