@@ -15,11 +15,12 @@ html, body {
 #intro {
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 #intro-vid {
     height: 100vh;
-    min-width: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -34,7 +35,11 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#title-container {
     padding-left: 3em;
+    position: relative;
 }
 
 h1 {
@@ -71,16 +76,21 @@ h2 {
 }
 
 #vid {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    right: 0;
+    max-height: 100vh;
+    width: 100%;
+}
+
+#vid-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #container {
     position: absolute;
     top: 0;
     z-index: 1;
+    left: 5%;
 }
 
 /* text box timing */
@@ -138,7 +148,6 @@ p {
 .triggerContainer {
     display: inline-block;
     position: relative;
-    left: 5%;
     padding: 1em;
 }
 
@@ -170,4 +179,21 @@ p {
 
 .credit-section {
     padding-bottom: 1em;
+}
+
+/* handling wide screens */
+@media (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+        margin: auto;
+    }
+}
+
+/* handling narrower screens */
+@media (max-width: 1070px) {
+    #container {
+        width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

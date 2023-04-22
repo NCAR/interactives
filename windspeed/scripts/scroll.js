@@ -2,11 +2,17 @@ $(document).ready(function() {
     const video = document.querySelector('#vid');
     var controller = new ScrollMagic.Controller();
 
+    var windowHeight = $(window).height();
+    var videoHeight = $('#vid').height();
+    var pinPoint = ((0.5 * windowHeight) - (0.5 * videoHeight)) / windowHeight
+    console.log(pinPoint)
+
+
     // handling video scroll
     var mainScene = new ScrollMagic.Scene({
         duration: 195000,
         triggerElement: "#vidframe",
-        triggerHook: 0
+        triggerHook: pinPoint
     })
         .setPin("#vidframe")
         .addTo(controller)
